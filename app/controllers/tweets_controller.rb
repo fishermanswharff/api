@@ -9,12 +9,16 @@ class TweetsController < ApplicationController
     end
 
     @jw_twitter = get_jw
+    binding.pry
+
   end
 
   def get_jw
-    @client.search("to:justinbieber marry me", :result_type => "recent").take(3).collect do |tweet|
-  "#{tweet.user.screen_name}: #{tweet.text}"
-end
+    @client.user('jasonwharff')
+    
+    # @client.search("to:justinbieber marry me", :result_type => "recent").take(3).collect do |tweet|
+    #   "#{tweet.user.screen_name}: #{tweet.text}"
+    # end
   end
   
 end

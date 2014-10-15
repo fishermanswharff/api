@@ -1,3 +1,7 @@
 <h1>tweets index</h1>
-
-<%= @jw_twitter %>
+<h2>username:</h2>
+<%= @jw_twitter.screen_name %>
+<h2>twitter id:</h2>
+<%= @jw_twitter.id  %>
+<h2>most recent status:</h2>
+<%= simple_format(@jw_twitter.status.text)  %>
