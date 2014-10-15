@@ -12,5 +12,4 @@
 /tmp
 /docs
 /.irb-history
-/config/aws.yml
-/config/gfonts.yml
+/config/twitter.yml
